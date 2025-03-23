@@ -59,7 +59,7 @@ export default function Signup() {
     const { email, password, prenom, nom } = values;
 
     try {
-      const response = await axios.post("http://localhost:5005/api/signup", {
+      const response = await axios.post("https://jeu-uno-back-q239.onrender.com/api/signup", {
         prenom,
         nom,
         email,

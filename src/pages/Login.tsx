@@ -43,7 +43,7 @@ export default function Login() {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5005/api/login",
+        "https://jeu-uno-back-q239.onrender.com/api/login",
         values
       );
       if (response.status === 200) {
